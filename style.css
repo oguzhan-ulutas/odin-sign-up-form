@@ -29,25 +29,21 @@ body > :first-child {
 }
 
 .logo-picture {
-  border: 1px solid;
   background-image: url(./halie-west.jpg);
   background-size: cover;
-  height: 98vh;
-  /* width: 10vw; */
+  height: 100vh;
   flex-basis: 1;
   flex-grow: 1;
   flex-shrink: 1;
-  width: min(34%, 300px);
+  width: 30%;
 }
 
 .form-data {
-  border: 1px solid;
-  height: 98vh;
-  /* width: 10vw; */
+  height: 92vh;
   flex-basis: 2;
   flex-grow: 2;
   flex-shrink: 2;
-  width: min(66%, 300px);
+  width: 60%;
 }
 
 .footer-left {
@@ -57,24 +53,26 @@ body > :first-child {
 a[href="https://unsplash.com/@haliewestphoto"],
 a[href="https://unsplash.com/"]
 {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--input-border-color);
 }
 
 a[href=""] {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--button-color);
 }
 
 img[src="./odin-lined.png"] {
-  width: clamp(6rem, 8rem, 10rem);
-  height: auto;
+  width: auto;
+  height: 80%;
 }
 
 .odin-writing {
   color: var(--input-border-color);
-  font-size: clamp(6rem, 8rem, 10rem);
+  font-size: 15vh;
   font-family: norse-bold, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding-top: 4vh;
 }
 
 .logo-picture {
@@ -88,32 +86,85 @@ img[src="./odin-lined.png"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   border: 3px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 15vh;
+  height: 17vh;
   margin-top: 25vh;
-  padding-top: 0rem;
+  padding: 2rem 0rem;
 }
 
 .form-data {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 3%;
+  background-color: rgb(245, 245, 245);
+  padding: 3rem;
 }
 
 .header-rigth {
-  font-size: min(5vh, 2rem);
+  font-size: max(2.5vh, 100%);
+  padding: 1rem 0.5rem;
 }
 
 form > div:first-of-type {
-  font-size: min(5vh, 2rem);
+  font-size: max(2.5vh, 100%);
+  padding: 1rem 0.5rem;
 }
 
 .form-info {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
+  width: 100%;
+  gap: 4%;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.form-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2%;
+  width: 25rem;
+}
+
+label {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: rgb(84, 81, 81);
+}
+
+.form-data > div:last-child {
+  font-size: min(3vh, 1.5rem);
+}
+
+button {
+  width: 16rem;
+  height: 4rem;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  color: var(--input-border-color);
+}
+
+input {
+  border: solid var(--input-border-color);
+  border-radius: 5px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:focus {
+  border-color: blue;
 }
