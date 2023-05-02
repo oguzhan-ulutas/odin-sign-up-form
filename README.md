@@ -2,7 +2,7 @@
 
 [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) exercise to learn about html forms.
 
-[Live Priview](https://oguzhan-ulutas.github.io/odin-sign-up-form/)
+[Live Preview](https://oguzhan-ulutas.github.io/odin-sign-up-form/)
 
 **What I learned with this project;**
 
